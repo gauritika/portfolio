@@ -43,7 +43,7 @@ export default function Contact() {
             </div>
             <div className="c-item">
               <div className="icon-box"><FaPhone /></div>
-              <div><h4>Phone</h4><p>+91-8218094347</p></div>
+              <div><h4>Phone</h4><p>Available on Request</p></div>
             </div>
             <div className="c-item">
               <div className="icon-box"><FaMapMarkerAlt /></div>
