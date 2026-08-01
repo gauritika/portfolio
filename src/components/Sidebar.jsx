@@ -50,7 +50,7 @@ export default function Sidebar() {
         </nav>
         <div className="sidebar-socials">
           <a href="https://www.linkedin.com/in/ritika-gaur-b91ab12a6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" onMouseEnter={playHover} onClick={playClick}><FaLinkedin /></a>
-          <a href="https://github.com/ritikagaur" target="_blank" rel="noopener noreferrer" aria-label="GitHub" onMouseEnter={playHover} onClick={playClick}><FaGithub /></a>
+          <a href="https://github.com/gauritika" target="_blank" rel="noopener noreferrer" aria-label="GitHub" onMouseEnter={playHover} onClick={playClick}><FaGithub /></a>
           <a href="https://leetcode.com/u/ritikagaur" target="_blank" rel="noopener noreferrer" aria-label="LeetCode" onMouseEnter={playHover} onClick={playClick}><SiLeetcode /></a>
         </div>
       </aside>
