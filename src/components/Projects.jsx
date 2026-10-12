@@ -15,6 +15,7 @@ const projects = [
     title: 'Pollination Activity Detector',
     desc: 'End-to-end ML pipeline using XGBoost to classify pollination activity with 82% accuracy. Features real-time weather data via Open-Meteo API and an interactive Streamlit dashboard with geospatial visualization.',
     tags: ['Python', 'XGBoost', 'Streamlit', 'Open-Meteo API'],
+    demo: 'https://pollination-activity-predictor-49v5ytnifhnijkjwzwokgs.streamlit.app/',
   },
   {
     thumb: 'Bug Triage Agent',
@@ -51,7 +52,12 @@ export default function Projects() {
                 <div className="tags">{p.tags.map(t => <span key={t}>{t}</span>)}</div>
                 <div className="proj-links">
                   <a href="#" onMouseEnter={playHover} onClick={playClick}><FaGithub /> Code</a>
-                  <a href="#" onMouseEnter={playHover} onClick={playClick}><FaExternalLinkAlt /> Demo</a>
+                  <a
+                    href={p.demo || '#'}
+                    {...(p.demo ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    onMouseEnter={playHover}
+                    onClick={playClick}
+                  ><FaExternalLinkAlt /> Demo</a>
                 </div>
               </div>
             </motion.div>
